@@ -201,16 +201,16 @@ def vernam():
 
 if len(sys.argv) != 4:
     print('Put correct number of arguments')
-
-if os.path.exists(sys.argv[1]):
-    if sys.argv[2] == 'caeser':
-        caeser()
-    if sys.argv[2] == 'vignere':
-        vignere()
-    if sys.argv[2] == 'vernam':
-        vernam()
 else:
-    print('No such file exists')
+    if os.path.exists(sys.argv[1]):
+        if sys.argv[2] == 'caeser':
+            caeser()
+        if sys.argv[2] == 'vignere':
+            vignere()
+        if sys.argv[2] == 'vernam':
+            vernam()
+    else:
+        print('No such file exists')
 
 # argv[0] - main.py
 # argv[1] - .txt file path
