@@ -174,7 +174,6 @@ def vernam():
     if sys.argv[3] == 'decryption':
         decrypted_content = ''
         key_count = 0
-        sum_of_ = 0
         for i in range(length):
             if content[i].isalpha():
                 if content[i].islower():
